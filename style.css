@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4e4ba;
+    padding: 1rem;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+form input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0.75rem;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    border-color: #af4d98;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.from,
+.to {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.select-container img {
+    width: 28px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.select-container select {
+    font-size: 1rem;
+    border: none;
+    background: transparent;
+    outline: none;
+    flex: 1;
+    cursor: pointer;
+}
+
+.dropdown i {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.msg {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+form button {
+    height: 3rem;
+    background-color: #af4d98;
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #942c7c;
+}
+
+@media screen and (max-width: 500px) {
+    .dropdown {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .from,
+    .to {
+        width: 100%;
+    }
+}
