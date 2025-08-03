@@ -79,15 +79,25 @@ form input:focus {
     width: 28px;
     height: 20px;
     border-radius: 4px;
+    flex-shrink: 0;
 }
 
 .select-container select {
-    font-size: 1rem;
+    font-size: 0.9rem;
     border: none;
     background: transparent;
     outline: none;
     flex: 1;
     cursor: pointer;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.select-container select option {
+    font-size: 0.85rem;
+    padding: 0.3rem;
 }
 
 .dropdown i {
@@ -126,5 +136,9 @@ form button:hover {
     .from,
     .to {
         width: 100%;
+    }
+
+    .select-container select {
+        font-size: 0.8rem;
     }
 }
